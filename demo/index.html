@@ -9,32 +9,40 @@
   <style>
     .adrian-ds {
       margin: 2rem;
-      max-width: 240px;
     }
-    .adrian-ds > * {
+    .adrian-ds > .box > * {
       margin-top: 2rem;
+    }
+    .adrian-ds .typography {
+      width: 240px;
     }
   </style>
 </head>
 <body>
 
 <main class="adrian-ds">
-  <h1>Header 01</h1>
-  <h2>Header 02</h2>
-  <h3>Header 03</h3>
-  <h4>Header 04</h4>
-  <h5>Header 05</h5>
-  <h6>Header 06</h6>
+  <h1>Adrian's personal design system</h1>
+  <h2>Typography</h2>
+  <div class="box typography">
+    <h1>Header 01</h1>
+    <h2>Header 02</h2>
+    <h3>Header 03</h3>
+    <h4>Header 04</h4>
+    <h5>Header 05</h5>
+    <h6>Header 06</h6>
 
-  <p class="text-lg">The quick brown fox jumps over the lazy dog.</p>
+    <p class="text-lg">The quick brown fox jumps over the lazy dog.</p>
 
-  <p>The quick brown fox jumps over the lazy dog.</p>
+    <p>The quick brown fox jumps over the lazy dog.</p>
 
-  <blockquote>The quick brown fox jumps over the lazy dog. (blockquote)</blockquote>
+    <blockquote>The quick brown fox jumps over the lazy dog. (blockquote)</blockquote>
 
-  <small style="display: block;">The quick brown fox jumps over the lazy dog.</small>
+    <small style="display: block;">The quick brown fox jumps over the lazy dog.</small>
+  </div>
 
-  <pre>
+  <div class="box--borderless">
+    <h4>&lt;pre&gt;</h4>
+    <pre>
 public static delta(r1: number, r2: number): number {
   const a1 = Angle.normalize(r1);
   const a2 = Angle.normalize(r2);
@@ -44,7 +52,10 @@ public static delta(r1: number, r2: number): number {
   }
   return delta;
 }
-  </pre>
+    </pre>
+  </div>
+
+  <hr />
 </main>
 
 </body>

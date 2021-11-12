@@ -13,3 +13,5 @@ p { @extend .text-body; }
 blockquote { @extend .text-blockquote; }
 small { @extend .text-small; }
 code, pre { @extend .text-code; }
+
+hr { @extend .hr; }

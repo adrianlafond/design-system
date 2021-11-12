@@ -1,0 +1,9 @@
+.box {
+  padding: 1rem;
+  outline: $border-width solid $fgcolor;
+}
+
+.box--borderless {
+  padding: 1rem;
+  outline: none;
+}
