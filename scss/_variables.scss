@@ -17,14 +17,16 @@ $line-height: 1.4;
 $indent: 2rem;
 $border-width: 1px;
 
-$color-primary: #d0e2ff;
-$color-secondary: #f4f4f4;
+$color-primary: #0043ce;
+$color-secondary: #525252;
+$color-destructive: #a2191f;
 
-$color-primary--hover: #b8d3ff;
-$color-secondary--hover: #e8e8e8;
+$color-primary--hover: #0053ff;
+$color-secondary--hover: #636363;
+$color-destructive--hover: #c21e25;
 
-// $color-disabled: #c6c6c6;
 $color-disabled: #8d8d8d;
 
-$shadow-up: inset 2px 2px 2px white, inset -2px -2px 2px rgba(black, 0.4);
-$shadow-press: inset 2px 2px 6px white, inset -1px -1px 1px rgba(black, 0.4);
+$shadow-up: inset 4px 4px 0 white, inset -4px -4px 0 rgba(black, 0.4);
+$shadow-press: inset 2px 2px 0 white, inset -1px -1px 0 rgba(black, 0.4);
+$text-shadow: -1px -1px 1px rgba(black, 0.25);
