@@ -1,0 +1,64 @@
+.text-lg {
+  font-size: 2.2rem;
+}
+.text-md {
+  font-size: 1.8rem;
+}
+.text-sm {
+  font-size: 1.4rem;
+}
+
+.text-header {
+  font-family: $font-header;
+  line-height: $line-height;
+  font-weight: bold;
+  @extend .text-lg;
+}
+.text-body {
+  font-family: $font-body;
+  line-height: $line-height;
+  @extend .text-md;
+}
+
+.text-header--01 {
+  @extend .text-header;
+  font-size: 4rem;
+}
+.text-header--02 {
+  @extend .text-header;
+  font-size: 3rem;
+}
+.text-header--03 {
+  @extend .text-header;
+  font-size: 2.6rem;
+}
+.text-header--04 {
+  @extend .text-header;
+  @extend .text-lg;
+}
+.text-header--05 {
+  @extend .text-header;
+  @extend .text-md;
+}
+.text-header--06 {
+  @extend .text-header;
+  @extend .text-sm;
+}
+
+.text-p {
+  @extend .text-body;
+}
+.text-blockquote {
+  @extend .text-body;
+  margin-left: $indent;
+  font-style: italic;
+}
+.text-small {
+  @extend .text-body;
+  @extend .text-sm;
+}
+.text-code {
+  font-family: $font-code;
+  line-height: $line-height;
+  @extend .text-sm;
+}

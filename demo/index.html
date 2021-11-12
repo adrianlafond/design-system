@@ -5,17 +5,47 @@
   <title>
     <%= htmlWebpackPlugin.options.title %>
   </title>
+
+  <style>
+    .adrian-ds {
+      margin: 2rem;
+      max-width: 240px;
+    }
+    .adrian-ds > * {
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
 
-<h1>Header 01</h1>
-<h2>Header 02</h2>
-<h3>Header 03</h3>
-<h4>Header 04</h4>
-<h5>Header 05</h5>
-<h6>Header 06</h6>
+<main class="adrian-ds">
+  <h1>Header 01</h1>
+  <h2>Header 02</h2>
+  <h3>Header 03</h3>
+  <h4>Header 04</h4>
+  <h5>Header 05</h5>
+  <h6>Header 06</h6>
 
-<p>The quick brown fox jumps over the lazy dog.</p>
+  <p class="text-lg">The quick brown fox jumps over the lazy dog.</p>
+
+  <p>The quick brown fox jumps over the lazy dog.</p>
+
+  <blockquote>The quick brown fox jumps over the lazy dog. (blockquote)</blockquote>
+
+  <small style="display: block;">The quick brown fox jumps over the lazy dog.</small>
+
+  <pre>
+public static delta(r1: number, r2: number): number {
+  const a1 = Angle.normalize(r1);
+  const a2 = Angle.normalize(r2);
+  let delta = a2 - a1;
+  if (Math.abs(delta) > Math.PI) {
+    delta = a2 - Math.PI * 2 - a1;
+  }
+  return delta;
+}
+  </pre>
+</main>
 
 </body>
 </html>

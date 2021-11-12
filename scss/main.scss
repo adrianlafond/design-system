@@ -1,5 +1,5 @@
-$bgcolor: #ff0;
-
-body {
-  background-color: $bgcolor;
-}
+@import 'reset';
+@import 'variables';
+@import 'text';
+@import 'body';
+@import 'html';

@@ -1,0 +1,15 @@
+/**
+ * Styles HTML tags.
+ */
+
+h1 { @extend .text-header--01; }
+h2 { @extend .text-header--02; }
+h3 { @extend .text-header--03; }
+h4 { @extend .text-header--04; }
+h5 { @extend .text-header--05; }
+h6 { @extend .text-header--06; }
+
+p { @extend .text-body; }
+blockquote { @extend .text-blockquote; }
+small { @extend .text-small; }
+code, pre { @extend .text-code; }
