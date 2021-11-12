@@ -1,0 +1,91 @@
+.#{$namespace}-button {
+  position: relative;
+  @extend .#{$namespace}-text-ui;
+  @extend .#{$namespace}-text-md;
+  color: $fgcolor-light;
+  font-weight: bold;
+  letter-spacing: $letter-spacing-header;
+  border-radius: 0;
+  border: 1px solid $fgcolor-light;
+  padding: 8px 16px;
+  background-color: $color-secondary;
+  box-shadow: $shadow-up;
+  transition: color 0.2s, padding 0.1s, box-shadow 0.2s,  0.2s;
+
+  &:focus-visible {
+    outline: none;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 16px;
+      bottom: 4px;
+      width: calc(100% - 32px);
+      height: 3px;
+      background-color: $fgcolor-light;
+      transition: 0.1s;
+    }
+
+    &:active:not(:disabled)::before {
+      left: 17px;
+      bottom: 3px;
+    }
+  }
+
+  &:hover:not(:disabled) {
+    color: $fgcolor;
+    background-color: $color-secondary--hover;
+    box-shadow: $shadow-up;
+    padding: 8px 16px;
+  }
+
+  &:active:not(:disabled) {
+    color: $fgcolor;
+    background-color: $color-secondary--hover;
+    box-shadow: $shadow-press;
+    padding: 9px 15px 7px 17px;
+  }
+
+  &--selected {
+    color: $fgcolor;
+    background-color: $color-secondary--hover;
+    box-shadow: $shadow-press;
+    padding: 9px 15px 7px 17px;
+
+    &:hover:not(:disabled) {
+      box-shadow: $shadow-up;
+      padding: 8px 16px;
+    }
+
+    &:active:not(:disabled) {
+      box-shadow: $shadow-press;
+      padding: 9px 15px 7px 17px;
+    }
+  }
+
+  &--primary {
+    position: relative;
+    color: $fgcolor;
+
+    &::after {
+      content: ' !!!';
+    }
+  }
+
+  &:disabled:not(&--selected) {
+    color: $color-disabled;
+    box-shadow: $shadow-press;
+    padding: 9px 15px 7px 17px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 17px;
+      top: 50%;
+      margin-top: -0.5px;
+      width: calc(100% - 32px);
+      height: 3px;
+      background-color: $color-disabled;
+    }
+  }
+}

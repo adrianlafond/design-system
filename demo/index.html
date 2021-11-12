@@ -10,7 +10,7 @@
     .adrian-ds {
       margin: 2rem;
     }
-    .adrian-ds > .box > * {
+    .adrian-ds > .adrian-box > * {
       margin-top: 2rem;
     }
     .adrian-ds .typography {
@@ -23,7 +23,7 @@
 <main class="adrian-ds">
   <h1>Adrian's personal design system</h1>
   <h2>Typography</h2>
-  <div class="box typography">
+  <div class="adrian-box typography">
     <h1>Header 01</h1>
     <h2>Header 02</h2>
     <h3>Header 03</h3>
@@ -31,7 +31,7 @@
     <h5>Header 05</h5>
     <h6>Header 06</h6>
 
-    <p class="text-lg">The quick brown fox jumps over the lazy dog.</p>
+    <p class="adrian-text-lg">The quick brown fox jumps over the lazy dog.</p>
 
     <p>The quick brown fox jumps over the lazy dog.</p>
 
@@ -40,7 +40,7 @@
     <small style="display: block;">The quick brown fox jumps over the lazy dog.</small>
   </div>
 
-  <div class="box--borderless">
+  <div class="adrian-box--borderless">
     <h4>&lt;pre&gt;</h4>
     <pre>
 public static delta(r1: number, r2: number): number {
@@ -56,6 +56,16 @@ public static delta(r1: number, r2: number): number {
   </div>
 
   <hr />
+
+  <h2>Button</h2>
+
+  <div class="adrian-box--flex">
+    <button class="adrian-button--primary">Primary</button>
+    <button>Secondary</button>
+    <button class="adrian-button--selected">Selected</button>
+    <button class="adrian-button--selected" disabled>Selected (disabled)</button>
+    <button disabled>Disabled</button>
+  </div>
 </main>
 
 </body>
