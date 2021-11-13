@@ -16,8 +16,8 @@
     .adrian-ds .typography {
       width: 240px;
     }
-    .space-between {
-      justify-content: space-between;
+    .v-space {
+      margin-bottom: 4px;
     }
   </style>
 </head>
@@ -62,27 +62,27 @@ public static delta(r1: number, r2: number): number {
 
   <h2>Button</h2>
 
-  <div class="adrian-box--flex space-between">
+  <div class="adrian-button-group v-space">
     <button class="adrian-button--primary">Primary</button>
-    <button>Secondary</button>
+    <button>◉ Secondary</button>
     <button class="adrian-button--destructive">Destructive</button>
     <button disabled>Disabled</button>
   </div>
 
-  <div class="adrian-box--flex space-between">
+  <div class="adrian-button-group v-space">
     <button>Secondary</button>
     <button class="adrian-button--selected">Selected</button>
     <button class="adrian-button--selected" disabled>Selected (disabled)</button>
   </div>
 
-  <div class="adrian-box--flex space-between">
+  <div class="adrian-button-group v-space">
     <button class="adrian-button--primary adrian-button--sm">Primary</button>
     <button class="adrian-button--sm">Secondary</button>
     <button class="adrian-button--destructive adrian-button--sm">Destructive</button>
     <button class="adrian-button--sm" disabled>Disabled</button>
   </div>
 
-  <div class="adrian-box--flex space-between">
+  <div class="adrian-button-group v-space">
     <button class="adrian-button--sm">Secondary</button>
     <button class="adrian-button--selected adrian-button--sm"">Selected</button>
     <button class="adrian-button--selected adrian-button--sm"" disabled>Selected (disabled)</button>
