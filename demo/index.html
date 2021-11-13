@@ -16,6 +16,9 @@
     .adrian-ds .typography {
       width: 240px;
     }
+    .space-between {
+      justify-content: space-between;
+    }
   </style>
 </head>
 <body>
@@ -59,14 +62,14 @@ public static delta(r1: number, r2: number): number {
 
   <h2>Button</h2>
 
-  <div class="adrian-box--flex">
+  <div class="adrian-box--flex space-between">
     <button class="adrian-button--primary">Primary</button>
     <button>Secondary</button>
     <button class="adrian-button--destructive">Destructive</button>
     <button disabled>Disabled</button>
   </div>
 
-  <div class="adrian-box--flex">
+  <div class="adrian-box--flex space-between">
     <button>Secondary</button>
     <button class="adrian-button--selected">Selected</button>
     <button class="adrian-button--selected" disabled>Selected (disabled)</button>
