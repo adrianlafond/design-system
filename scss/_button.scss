@@ -14,6 +14,18 @@
   padding: 9px 16px 7px;
   transition: 0.1s;
 
+  &--sm {
+    @extend .#{$namespace}-text-sm;
+    line-height: 1.5;
+
+    &:focus-visible {
+      &::after {
+        bottom: 7px;
+        height: 2px;
+      }
+    }
+  }
+
   &:focus-visible {
     outline: none;
 
@@ -24,7 +36,7 @@
       bottom: 10px;
       width: calc(100% - 32px);
       height: 3px;
-      background-color: $color-secondary;
+      background-color: $fgcolor-light;
       transition: 0.1s;
     }
   }
@@ -45,12 +57,16 @@
   }
 
   &--destructive {
+    font-style: italic;
+
     &::before {
       content: '‼ ';
     }
   }
 
   &--selected {
+    background-color: $bgcolor-darker;
+
     &::before {
       content: '◉ ';
     }
