@@ -16,4 +16,20 @@ code, pre { @extend .#{$namespace}-text-code; }
 
 hr { @extend .#{$namespace}-hr; }
 
-button { @extend .#{$namespace}-button }
+button { @extend .#{$namespace}-button; }
+
+table { @extend .#{$namespace}-table; }
+
+label { @extend .#{$namespace}-label; }
+
+.#{$namespace}-select {
+  select { @extend .#{$namespace}-select__element; }
+}
+
+.#{$namespace}-checkbox {
+  input[type=checkbox] { @extend .#{$namespace}-checkbox__element; }
+}
+
+.#{$namespace}-radio {
+  input[type=radio] { @extend .#{$namespace}-radio__element; }
+}

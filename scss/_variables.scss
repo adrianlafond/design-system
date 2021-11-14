@@ -30,6 +30,9 @@ $color-disabled: #8d8d8d;
 $border-color: $fgcolor;
 $border-color-light: #a8a8a8;
 
+$link-color: #a6c8ff;
+$focus-color: $link-color;
+
 $button-shadow: inset -3px -3px 0 rgba(black, 0.5), inset 5px 5px 0 rgba(white, 1);
 $button-shadow--hover: inset -5px -5px 0 rgba(black, 0.5), inset 7px 7px 0 rgba(white, 1);
 $button-shadow--press: inset -1px -1px 0 rgba(black, 0.5), inset 1px 1px 0 rgba(white, 1);
