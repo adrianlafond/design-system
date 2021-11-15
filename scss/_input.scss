@@ -1,0 +1,28 @@
+.#{$namespace}-input {
+  @extend .#{$namespace}-text-body;
+  @extend .#{$namespace}-text-md;
+  border-width: 1px 0 2px;
+  border-style: solid;
+  border-color: $fgcolor;
+  height: 4rem;
+  background-color: transparent;
+  transition: 0.1s;
+
+  &:focus {
+    outline: none;
+    background-color: white;
+  }
+
+  &:focus-visible {
+    border-color: $focus-color;
+  }
+
+  &--block {
+    display: block;
+  }
+}
+
+.#{$namespace}-textarea {
+  @extend .#{$namespace}-input;
+  height: auto;
+}

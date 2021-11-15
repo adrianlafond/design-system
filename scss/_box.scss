@@ -1,0 +1,14 @@
+.#{$namespace}-box {
+  padding: 1rem;
+  outline: $border-width solid $fgcolor;
+}
+
+.#{$namespace}-box--flex {
+  @extend .#{$namespace}-box;
+  display: flex;
+}
+
+.#{$namespace}-box--borderless {
+  @extend .#{$namespace}-box;
+  outline: none;
+}

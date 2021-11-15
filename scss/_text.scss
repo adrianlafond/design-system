@@ -1,0 +1,68 @@
+.#{$namespace}-text-lg {
+  font-size: 2.2rem;
+}
+.#{$namespace}-text-md {
+  font-size: 1.8rem;
+}
+.#{$namespace}-text-sm {
+  font-size: 1.4rem;
+}
+
+.#{$namespace}-text-header {
+  font-family: $font-header;
+  line-height: $line-height;
+  font-weight: bold;
+  letter-spacing: $letter-spacing-header;
+  @extend .#{$namespace}-text-lg;
+}
+.#{$namespace}-text-body {
+  font-family: $font-body;
+  line-height: $line-height;
+  @extend .#{$namespace}-text-md;
+}
+.#{$namespace}-text-ui {
+  font-family: $font-ui;
+}
+
+.#{$namespace}-text-header--01 {
+  @extend .#{$namespace}-text-header;
+  font-size: 4rem;
+}
+.#{$namespace}-text-header--02 {
+  @extend .#{$namespace}-text-header;
+  font-size: 3rem;
+}
+.#{$namespace}-text-header--03 {
+  @extend .#{$namespace}-text-header;
+  font-size: 2.6rem;
+}
+.#{$namespace}-text-header--04 {
+  @extend .#{$namespace}-text-header;
+  @extend .#{$namespace}-text-lg;
+}
+.#{$namespace}-text-header--05 {
+  @extend .#{$namespace}-text-header;
+  @extend .#{$namespace}-text-md;
+}
+.#{$namespace}-text-header--06 {
+  @extend .#{$namespace}-text-header;
+  @extend .#{$namespace}-text-sm;
+}
+
+.#{$namespace}-text-p {
+  @extend .#{$namespace}-text-body;
+}
+.#{$namespace}-text-blockquote {
+  @extend .#{$namespace}-text-body;
+  margin-left: $indent;
+  font-style: italic;
+}
+.#{$namespace}-text-small {
+  @extend .#{$namespace}-text-body;
+  @extend .#{$namespace}-text-sm;
+}
+.#{$namespace}-text-code {
+  font-family: $font-code;
+  line-height: $line-height;
+  @extend .#{$namespace}-text-sm;
+}

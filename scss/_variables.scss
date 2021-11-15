@@ -1,0 +1,39 @@
+// Carbon colors: https://carbon-elements.netlify.app/colors/examples/preview/
+
+$bgcolor: #f2f4f8;// #f4f4f4;
+$fgcolor: #121619;
+
+$bgcolor-dark: #dde1e6;
+$bgcolor-darker: #c1c7cd;
+$fgcolor-light: #21272a;
+
+$font-size: 10px;
+$font-header: Helvetica,Arial,sans-serif;
+$font-body: "American Typewriter",Georgia,serif;
+$font-ui: Helvetica,Arial,sans-serif;
+$font-code: Menlo,monospace;
+
+$letter-spacing-header: 1.5px;
+$line-height: 1.4;
+$indent: 2rem;
+$border-width: 1px;
+
+$color-primary: #d0e2ff;
+$color-secondary: #525252;
+$color-destructive: #a2191f;
+
+$color-primary--hover: #b8d3ff;
+$color-secondary--hover: #636363;
+$color-destructive--hover: #c21e25;
+$color-disabled: #8d8d8d;
+
+$border-color: $fgcolor;
+$border-color-light: #a8a8a8;
+
+$link-color: #a6c8ff;
+$focus-color: #0f62fe;
+$focus-outline: 4px solid $focus-color;
+
+$button-shadow: inset -3px -3px 0 rgba(black, 0.5), inset 5px 5px 0 rgba(white, 1);
+$button-shadow--hover: inset -5px -5px 0 rgba(black, 0.5), inset 7px 7px 0 rgba(white, 1);
+$button-shadow--press: inset -1px -1px 0 rgba(black, 0.5), inset 1px 1px 0 rgba(white, 1);

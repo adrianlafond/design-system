@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+
+  <style>
+    .adrian-ds {
+      margin: 2rem;
+    }
+    .adrian-ds > .adrian-box > * {
+      margin-top: 2rem;
+    }
+    .adrian-ds .typography {
+      width: 240px;
+    }
+    .v-space {
+      margin-bottom: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<main class="adrian-ds">
+  <h1>Adrian's personal design system</h1>
+  <h2>Typography</h2>
+  <div class="adrian-box typography">
+    <h1>Header 01</h1>
+    <h2>Header 02</h2>
+    <h3>Header 03</h3>
+    <h4>Header 04</h4>
+    <h5>Header 05</h5>
+    <h6>Header 06</h6>
+
+    <p class="adrian-text-lg">The quick brown fox jumps over the lazy dog.</p>
+
+    <p>The quick brown fox jumps over the lazy dog.</p>
+
+    <blockquote>The quick brown fox jumps over the lazy dog. (blockquote)</blockquote>
+
+    <small style="display: block;">The quick brown fox jumps over the lazy dog.</small>
+  </div>
+
+  <div class="adrian-box--borderless">
+    <h4>&lt;pre&gt;</h4>
+    <pre>
+public static delta(r1: number, r2: number): number {
+  const a1 = Angle.normalize(r1);
+  const a2 = Angle.normalize(r2);
+  let delta = a2 - a1;
+  if (Math.abs(delta) > Math.PI) {
+    delta = a2 - Math.PI * 2 - a1;
+  }
+  return delta;
+}
+    </pre>
+  </div>
+
+  <hr />
+
+  <h2>Button</h2>
+
+  <div class="adrian-button-group v-space">
+    <button class="adrian-button--primary">Primary</button>
+    <button>Secondary</button>
+    <button class="adrian-button--destructive">Destructive</button>
+    <button disabled>Disabled</button>
+  </div>
+
+  <div class="adrian-button-group v-space">
+    <button>Secondary</button>
+    <button class="adrian-button--selected">Selected</button>
+    <button class="adrian-button--selected" disabled>Selected (disabled)</button>
+  </div>
+
+  <div class="adrian-button-group v-space">
+    <button class="adrian-button--primary adrian-button--sm">Primary</button>
+    <button class="adrian-button--sm">Secondary</button>
+    <button class="adrian-button--destructive adrian-button--sm">Destructive</button>
+    <button class="adrian-button--sm" disabled>Disabled</button>
+  </div>
+
+  <div class="adrian-button-group v-space">
+    <button class="adrian-button--sm">Secondary</button>
+    <button class="adrian-button--selected adrian-button--sm"">Selected</button>
+    <button class="adrian-button--selected adrian-button--sm"" disabled>Selected (disabled)</button>
+  </div>
+
+  <hr />
+
+  <h2>Input & Texarea</h2>
+
+  <div class="v-space">
+    <label>
+      Label:
+      <input class="adrian-input adrian-input--block" />
+    </label>
+  </div>
+  <div class="v-space">
+    <textarea class="adrian-textarea"></textarea>
+  </div>
+
+  <h2>Table</h2>
+
+  <table class="adrian-table v-space">
+    <thead>
+      <tr>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Color</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Adrian</td>
+        <td>Lafond</td>
+        <td>blue</td>
+      </tr>
+      <tr>
+        <td>Eamon</td>
+        <td>Lafond</td>
+        <td>orange</td>
+      </tr>
+      <tr>
+        <td>Jocelyn</td>
+        <td>Torio</td>
+        <td>green</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+
+  <h2>Select</h2>
+
+  <div class="v-space">
+    <div class="adrian-select">
+      <select class="adrian-select__element">
+        <option>Adrian</option>
+        <option>Eamon</option>
+        <option>Jocelyn</option>
+      </select>
+    </div>
+  </div>
+
+  <hr>
+
+  <h2>Radio & Checkbox</h2>
+
+  <div class="v-space">
+    <label class="adrian-label--block">
+      <div class="adrian-checkbox">
+        <input type="checkbox">
+        <div class="adrian-checkbox__graphic"></div>
+      </div>
+      Checkbox
+    </label>
+    <label class="adrian-label--block">
+      <div class="adrian-checkbox">
+        <input type="checkbox">
+        <div class="adrian-checkbox__graphic"></div>
+      </div>
+      Checkbox
+    </label>
+    <label class="adrian-label--block">
+      Checkbox
+      <div class="adrian-checkbox adrian-checkbox--right">
+        <input type="checkbox">
+        <div class="adrian-checkbox__graphic"></div>
+      </div>
+    </label>
+  </div>
+
+  <div class="v-space">
+    <label class="adrian-label--block">
+      <div class="adrian-radio">
+        <input type="radio" name="radio">
+        <div class="adrian-radio__graphic"></div>
+      </div>
+      Radio
+    </label>
+    <label class="adrian-label--block">
+      <div class="adrian-radio">
+        <input type="radio" name="radio">
+        <div class="adrian-radio__graphic"></div>
+      </div>
+      Radio
+    </label>
+    <label class="adrian-label--block">
+      Radio
+      <div class="adrian-radio adrian-radio--right">
+        <input type="radio" name="radio">
+        <div class="adrian-radio__graphic"></div>
+      </div>
+    </label>
+  </div>
+</main>
+
+</body>
+</html>

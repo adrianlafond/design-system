@@ -1,0 +1,53 @@
+.#{$namespace}-select {
+  position: relative;
+  align-items: center;
+  width: fit-content;
+
+  &::after {
+    content: '▾';
+    position: absolute;
+    right: 16px;
+    top: 9px;
+    pointer-events: none;
+  }
+
+  &:focus {
+    outline-color: $focus-color;
+  }
+
+  &__element {
+    position: relative;
+    @extend .#{$namespace}-text-ui;
+    @extend .#{$namespace}-text-md;
+    color: $fgcolor-light;
+    font-weight: bold;
+    letter-spacing: $letter-spacing-header;
+    border-radius: 12px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $fgcolor;
+    background-color: $bgcolor-dark;
+    padding: 3px 32px 0 16px;
+    transition: 0.1s;
+    height: 4rem;
+    box-shadow: $button-shadow;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+
+    &:hover:not(:disabled) {
+      background-color: $bgcolor;
+      box-shadow: $button-shadow--hover;
+    }
+
+    &:active:not(:disabled) {
+      background-color: $bgcolor-darker;
+      box-shadow: $button-shadow--press;
+    }
+
+    option {
+      font-weight: normal;
+      background-color: $bgcolor-dark;
+    }
+  }
+}

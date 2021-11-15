@@ -1,0 +1,35 @@
+/**
+ * Styles HTML tags.
+ */
+
+h1 { @extend .#{$namespace}-text-header--01; }
+h2 { @extend .#{$namespace}-text-header--02; }
+h3 { @extend .#{$namespace}-text-header--03; }
+h4 { @extend .#{$namespace}-text-header--04; }
+h5 { @extend .#{$namespace}-text-header--05; }
+h6 { @extend .#{$namespace}-text-header--06; }
+
+p { @extend .#{$namespace}-text-body; }
+blockquote { @extend .#{$namespace}-text-blockquote; }
+small { @extend .#{$namespace}-text-small; }
+code, pre { @extend .#{$namespace}-text-code; }
+
+hr { @extend .#{$namespace}-hr; }
+
+button { @extend .#{$namespace}-button; }
+
+table { @extend .#{$namespace}-table; }
+
+label { @extend .#{$namespace}-label; }
+
+.#{$namespace}-select {
+  select { @extend .#{$namespace}-select__element; }
+}
+
+.#{$namespace}-checkbox {
+  input[type=checkbox] { @extend .#{$namespace}-checkbox__element; }
+}
+
+.#{$namespace}-radio {
+  input[type=radio] { @extend .#{$namespace}-radio__element; }
+}

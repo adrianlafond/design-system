@@ -1,0 +1,17 @@
+/**
+ * Sets global font-size and body colors.
+ */
+html {
+  font-size: $font-size;
+}
+body {
+  background-color: $bgcolor;
+  color: $fgcolor;
+  @extend .#{$namespace}-text-body;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+}

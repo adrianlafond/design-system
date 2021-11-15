@@ -1,0 +1,30 @@
+{
+  "name": "@adrianlafond/design-system",
+  "version": "0.0.0",
+  "description": "Adrian's personal design system for personal projects",
+  "main": "scss/main.scss",
+  "scripts": {
+    "start": "webpack serve --open",
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianlafond/design-system.git"
+  },
+  "author": "Adrian Lafond <mail@adrianlafond.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adrianlafond/design-system/issues"
+  },
+  "homepage": "https://github.com/adrianlafond/design-system#readme",
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.64.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
+  }
+}
