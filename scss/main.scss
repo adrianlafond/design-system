@@ -13,4 +13,6 @@
 @import 'select';
 @import 'hr';
 @import 'body';
-@import 'html';
+
+// Include only HTML tags should also be styled:
+// @import 'html';
