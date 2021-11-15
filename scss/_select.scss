@@ -11,6 +11,10 @@
     pointer-events: none;
   }
 
+  &:focus {
+    outline-color: $focus-color;
+  }
+
   &__element {
     position: relative;
     @extend .#{$namespace}-text-ui;

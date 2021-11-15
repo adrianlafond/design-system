@@ -37,8 +37,6 @@
   }
 
   &__element:focus + &__graphic {
-    outline-color: $focus-color;
-    outline-width: 0.4rem;
-    outline-style: solid;
+    outline: $focus-outline
   }
 }

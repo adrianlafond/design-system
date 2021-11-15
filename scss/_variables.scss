@@ -1,11 +1,11 @@
 // Carbon colors: https://carbon-elements.netlify.app/colors/examples/preview/
 
-$bgcolor: #f4f4f4;
-$fgcolor: #262626;
+$bgcolor: #f2f4f8;// #f4f4f4;
+$fgcolor: #121619;
 
-$bgcolor-dark: #e8e8e8;
-$bgcolor-darker: #e0e0e0;
-$fgcolor-light: #333333;
+$bgcolor-dark: #dde1e6;
+$bgcolor-darker: #c1c7cd;
+$fgcolor-light: #21272a;
 
 $font-size: 10px;
 $font-header: Helvetica,Arial,sans-serif;
@@ -31,7 +31,8 @@ $border-color: $fgcolor;
 $border-color-light: #a8a8a8;
 
 $link-color: #a6c8ff;
-$focus-color: $link-color;
+$focus-color: #0f62fe;
+$focus-outline: 4px solid $focus-color;
 
 $button-shadow: inset -3px -3px 0 rgba(black, 0.5), inset 5px 5px 0 rgba(white, 1);
 $button-shadow--hover: inset -5px -5px 0 rgba(black, 0.5), inset 7px 7px 0 rgba(white, 1);
