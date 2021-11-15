@@ -15,7 +15,7 @@ export class Heading01 extends LitElement {
   @property({ reflect: true })
   role?: string = 'heading'
 
-  @property({ reflect: true, attribute: 'aria-level' })
+  @property({ type: Number, reflect: true, attribute: 'aria-level' })
   ariaLevel: string = '1'
 
   render() {
