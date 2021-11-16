@@ -24,6 +24,7 @@ export class Checkbox extends LitElement {
     }
     .root--block {
       display: flex;
+      margin-bottom: 8px;
     }
     .root__box {
       position: relative;
@@ -68,14 +69,41 @@ export class Checkbox extends LitElement {
   block?: string
 
   @property({ type: Boolean })
-  right?: string;
+  right?: string
+
+  @property({ type: Boolean })
+  checked?: string
+
+  @property({ type: String })
+  name?: string
+
+  @property({ type: String })
+  value?: string
+
+  handleChange(event: Event) {
+    this.dispatchEvent(new CustomEvent('change', {
+      ...event,
+      detail: {
+        checked: (event.target as HTMLInputElement).checked,
+        name: this.name,
+        value: this.value,
+      },
+    }))
+  }
 
   render() {
     return html`
       <label class=${classMap({ root: true, 'root--block': !!this.block })}>
         ${this.right ? html`<slot></slot>` : null}
         <div class=${classMap({ 'root__box': true, 'root__box--right': !!this.right })}>
-          <input class="root__element" type="checkbox">
+          <input
+            class="root__element"
+            type="checkbox"
+            ?name=${this.name}
+            ?checked=${this.checked}
+            ?value=${this.value}
+            @change=${this.handleChange}
+          >
           <div class="root__graphic"></div>
         </div>
         ${this.right ? null : html`<slot></slot>`}
