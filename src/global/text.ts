@@ -18,7 +18,7 @@ export const TEXT_HEADER = css`
   line-height: 1;
 `
 
-export const TEXT_HEADER_01 = css`
+export const TEXT_HEADER_1 = css`
   ${TEXT_HEADER}
   font-size: 40px;
 `
