@@ -1,53 +1,98 @@
 .#{$namespace}-select {
   position: relative;
-  align-items: center;
-  width: fit-content;
+  @extend .#{$namespace}-text-ui;
+  @extend .#{$namespace}-text-md;
+  color: $fgcolor;
+  border-width: 0;
+  border-style: solid;
+  border-color: $fgcolor;
+  height: 4rem;
+  transition: box-shadow 0.2s;
+  box-shadow: inset -1px -1px 2px rgba(black, 0.5);
+  padding: 1rem;
+  background-color: white;
+  background: linear-gradient(
+    315deg,
+    rgba($color-interactive-hover, 0.25) 0%,
+    white 30%,
+    white 70%,
+    rgba($color-interactive-hover, 0.25) 100%,
+  );
+
+  &:hover {
+    box-shadow: inset -1px -1px 4px rgba(black, 0.75);
+  }
+
+  &:focus-within {
+    box-shadow: inset -1px -1px 4px rgba(black, 0.75);
+    outline: $focus-outline;
+  }
 
   &::after {
-    content: '▾';
+    content: ' ▼';
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+
+  // Actual <select> sits on top, invisible.
+  & > select {
     position: absolute;
-    right: 16px;
-    top: 9px;
-    pointer-events: none;
-  }
-
-  &:focus {
-    outline-color: $focus-color;
-  }
-
-  &__element {
-    position: relative;
-    @extend .#{$namespace}-text-ui;
-    @extend .#{$namespace}-text-md;
-    color: $fgcolor-light;
-    font-weight: bold;
-    letter-spacing: $letter-spacing-header;
-    border-radius: 12px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: $fgcolor;
-    background-color: $bgcolor-dark;
-    padding: 3px 32px 0 16px;
-    transition: 0.1s;
-    height: 4rem;
-    box-shadow: $button-shadow;
-    -webkit-appearance: none;
-    appearance: none;
+    left: 0;
+    top: 0;
+    opacity: 0;
     width: 100%;
-
-    &:hover:not(:disabled) {
-      background-color: $bgcolor;
-      box-shadow: $button-shadow--hover;
-    }
-
-    &:active:not(:disabled) {
-      background-color: $bgcolor-darker;
-      box-shadow: $button-shadow--press;
-    }
-
-    option {
-      font-weight: normal;
-      background-color: $bgcolor-dark;
-    }
+    height: 100%;
   }
+
+  // position: relative;
+  // align-items: center;
+  // width: fit-content;
+
+  // &::after {
+  //   content: '▾';
+  //   position: absolute;
+  //   right: 16px;
+  //   top: 9px;
+  //   pointer-events: none;
+  // }
+
+  // &:focus {
+  //   outline-color: $focus-color;
+  // }
+
+  // &__element {
+  //   position: relative;
+  //   @extend .#{$namespace}-text-ui;
+  //   @extend .#{$namespace}-text-md;
+  //   color: $fgcolor-light;
+  //   font-weight: bold;
+  //   letter-spacing: $letter-spacing-header;
+  //   border-radius: 12px;
+  //   border-width: 2px;
+  //   border-style: solid;
+  //   border-color: $fgcolor;
+  //   background-color: $bgcolor-dark;
+  //   padding: 3px 32px 0 16px;
+  //   transition: 0.1s;
+  //   height: 4rem;
+  //   box-shadow: $button-shadow;
+  //   -webkit-appearance: none;
+  //   appearance: none;
+  //   width: 100%;
+
+  //   &:hover:not(:disabled) {
+  //     background-color: $bgcolor;
+  //     box-shadow: $button-shadow--hover;
+  //   }
+
+  //   &:active:not(:disabled) {
+  //     background-color: $bgcolor-darker;
+  //     box-shadow: $button-shadow--press;
+  //   }
+
+  //   option {
+  //     font-weight: normal;
+  //     background-color: $bgcolor-dark;
+  //   }
+  // }
 }

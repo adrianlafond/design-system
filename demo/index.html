@@ -39,12 +39,14 @@
 
     <p>The quick brown fox jumps over the lazy dog.</p>
 
+    <p>Here is a <code>code example</code> with numbers <code>0123</code>.</p>
+
     <blockquote>The quick brown fox jumps over the lazy dog. (blockquote)</blockquote>
 
     <small style="display: block;">The quick brown fox jumps over the lazy dog.</small>
   </div>
 
-  <div class="adrian-box--borderless">
+  <div class="adrian-box">
     <h4>&lt;pre&gt;</h4>
     <pre>
 public static delta(r1: number, r2: number): number {
@@ -56,38 +58,46 @@ public static delta(r1: number, r2: number): number {
   }
   return delta;
 }
-    </pre>
+</pre>
   </div>
 
   <hr />
 
   <h2>Button</h2>
 
-  <div class="adrian-button-group v-space">
+  <section class="adrian-button-group">
     <button class="adrian-button--primary">Primary</button>
     <button>Secondary</button>
+    <button class="adrian-button--selected">Selected</button>
     <button class="adrian-button--destructive">Destructive</button>
     <button disabled>Disabled</button>
-  </div>
+  </section>
 
-  <div class="adrian-button-group v-space">
-    <button>Secondary</button>
-    <button class="adrian-button--selected">Selected</button>
-    <button class="adrian-button--selected" disabled>Selected (disabled)</button>
-  </div>
-
-  <div class="adrian-button-group v-space">
+  <section class="adrian-button-group">
     <button class="adrian-button--primary adrian-button--sm">Primary</button>
     <button class="adrian-button--sm">Secondary</button>
+    <button class="adrian-button--selected adrian-button--sm"">Selected</button>
     <button class="adrian-button--destructive adrian-button--sm">Destructive</button>
     <button class="adrian-button--sm" disabled>Disabled</button>
-  </div>
+  </section>
 
-  <div class="adrian-button-group v-space">
-    <button class="adrian-button--sm">Secondary</button>
-    <button class="adrian-button--selected adrian-button--sm"">Selected</button>
-    <button class="adrian-button--selected adrian-button--sm"" disabled>Selected (disabled)</button>
-  </div>
+  <pre>
+&LT;section class="adrian-button-group"&GT;
+  &LT;button class="adrian-button--primary"&GT;Primary&LT;/button&GT;
+  &LT;button&GT;Secondary&LT;/button&GT;
+  &LT;button class="adrian-button--selected"&GT;Selected&LT;/button&GT;
+  &LT;button class="adrian-button--destructive"&GT;Destructive&LT;/button&GT;
+  &LT;button disabled&GT;Disabled&LT;/button&GT;
+&LT;/section&GT;
+
+&LT;section class="adrian-button-group"&GT;
+  &LT;button class="adrian-button--primary adrian-button--sm"&GT;Primary&LT;/button&GT;
+  &LT;button class="adrian-button--sm"&GT;Secondary&LT;/button&GT;
+  &LT;button class="adrian-button--selected adrian-button--sm""&GT;Selected&LT;/button&GT;
+  &LT;button class=" adrian-button--destructive adrian-button--sm"&GT;Destructive&LT;/button&GT;
+  &LT;button class="adrian-button--sm" disabled&GT;Disabled&LT;/button&GT;
+&LT;/section&GT;
+</pre>
 
   <hr />
 
@@ -137,13 +147,14 @@ public static delta(r1: number, r2: number): number {
   <h2>Select</h2>
 
   <div class="v-space">
-    <div class="adrian-select">
-      <select class="adrian-select__element">
+    <label class="adrian-select">
+      Select person
+      <select>
         <option>Adrian</option>
         <option>Eamon</option>
         <option>Jocelyn</option>
       </select>
-    </div>
+    </label>
   </div>
 
   <hr>

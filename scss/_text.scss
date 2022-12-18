@@ -11,7 +11,7 @@
 .#{$namespace}-text-header {
   font-family: $font-header;
   line-height: $line-height;
-  font-weight: bold;
+  font-weight: normal;
   letter-spacing: $letter-spacing-header;
   @extend .#{$namespace}-text-lg;
 }
@@ -64,5 +64,4 @@
 .#{$namespace}-text-code {
   font-family: $font-code;
   line-height: $line-height;
-  @extend .#{$namespace}-text-sm;
 }

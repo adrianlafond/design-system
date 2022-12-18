@@ -1,20 +1,30 @@
 .#{$namespace}-input {
-  @extend .#{$namespace}-text-body;
+  @extend .#{$namespace}-text-code;
   @extend .#{$namespace}-text-md;
-  border-width: 1px 0 2px;
+  color: $fgcolor;
+  border-width: 0;
   border-style: solid;
   border-color: $fgcolor;
   height: 4rem;
-  background-color: transparent;
-  transition: 0.1s;
+  transition: box-shadow 0.2s;
+  box-shadow: inset 1px 1px 2px rgba(black, 0.25);
+  padding: 1rem;
+  background-color: white;
+  background: linear-gradient(
+    315deg,
+    rgba($color-interactive-hover, 0.25) 0%,
+    white 30%,
+    white 70%,
+    rgba($color-interactive-hover, 0.25) 100%,
+  );
 
   &:focus {
+    box-shadow: inset 1px 1px 4px rgba(black, 0.75);
     outline: none;
-    background-color: white;
   }
 
   &:focus-visible {
-    border-color: $focus-color;
+    outline: $focus-outline;
   }
 
   &--block {

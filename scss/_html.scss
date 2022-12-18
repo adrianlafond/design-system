@@ -12,7 +12,24 @@ h6 { @extend .#{$namespace}-text-header--06; }
 p { @extend .#{$namespace}-text-body; }
 blockquote { @extend .#{$namespace}-text-blockquote; }
 small { @extend .#{$namespace}-text-small; }
-code, pre { @extend .#{$namespace}-text-code; }
+code, pre {
+  @extend .#{$namespace}-text-code;
+  background-color: white;// #e5e0df; // warmGray-20
+  color: #565151;// warmGray-70
+  font-size: 1.4rem;
+}
+
+code {
+  padding: 0 1rem;
+}
+
+pre {
+  padding: 1rem;
+}
+
+section {
+  margin: 1rem 0;
+}
 
 hr { @extend .#{$namespace}-hr; }
 
@@ -22,9 +39,9 @@ table { @extend .#{$namespace}-table; }
 
 label { @extend .#{$namespace}-label; }
 
-.#{$namespace}-select {
-  select { @extend .#{$namespace}-select__element; }
-}
+// .#{$namespace}-select {
+//   select { @extend .#{$namespace}-select__element; }
+// }
 
 .#{$namespace}-checkbox {
   input[type=checkbox] { @extend .#{$namespace}-checkbox__element; }

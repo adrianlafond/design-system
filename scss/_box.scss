@@ -1,6 +1,8 @@
 .#{$namespace}-box {
+  margin: 1rem 0;
   padding: 1rem;
-  outline: $border-width solid $fgcolor;
+  background-color: #f7f3f2; // warmGray-10
+  // outline: $border-width solid $fgcolor;
 }
 
 .#{$namespace}-box--flex {

@@ -1,22 +1,29 @@
 // Carbon colors: https://carbon-elements.netlify.app/colors/examples/preview/
 
-$bgcolor: #f2f4f8;// #f4f4f4;
-$fgcolor: #121619;
+$bgcolor: #f4f4f4; // gray-10 hover
+$fgcolor: #272525; // warmGray-90
 
 $bgcolor-dark: #dde1e6;
 $bgcolor-darker: #c1c7cd;
 $fgcolor-light: #21272a;
 
 $font-size: 10px;
-$font-header: Helvetica,Arial,sans-serif;
-$font-body: "American Typewriter",Georgia,serif;
-$font-ui: Helvetica,Arial,sans-serif;
-$font-code: Menlo,monospace;
+$font-header: "Anton", Helvetica,Arial,sans-serif;
+$font-body: "Gentium Basic", Georgia, serif;
+$font-ui: "Abel", Helvetica, Arial, sans-serif;// "Alata", "Amiko", "Abel",
+$font-code: "Fira Code", monospace;
 
 $letter-spacing-header: 1.5px;
 $line-height: 1.4;
 $indent: 2rem;
 $border-width: 1px;
+
+$color-interactive: #e5e0df; // warmGray-20
+$color-interactive-hover: #d8d0cf; // warmGray-20 hover
+$color-disabled: #8f8b8b; // warmGray-50
+
+$color-selected: #ada8a8; // warmGray-40
+$color-selected-hover: #9c9696; // warmGray-40 hover
 
 $color-primary: #d0e2ff;
 $color-secondary: #525252;
@@ -25,15 +32,15 @@ $color-destructive: #a2191f;
 $color-primary--hover: #b8d3ff;
 $color-secondary--hover: #636363;
 $color-destructive--hover: #c21e25;
-$color-disabled: #8d8d8d;
 
 $border-color: $fgcolor;
 $border-color-light: #a8a8a8;
 
 $link-color: #a6c8ff;
-$focus-color: #0f62fe;
-$focus-outline: 4px solid $focus-color;
+$focus-color: #33b1ff; // cyan-40
+$focus-outline: 2px solid rgba($focus-color, 1);
 
-$button-shadow: inset -3px -3px 0 rgba(black, 0.5), inset 5px 5px 0 rgba(white, 1);
-$button-shadow--hover: inset -5px -5px 0 rgba(black, 0.5), inset 7px 7px 0 rgba(white, 1);
-$button-shadow--press: inset -1px -1px 0 rgba(black, 0.5), inset 1px 1px 0 rgba(white, 1);
+$button-shadow: inset -2px -2px 6px rgba(black, 1), inset 2px 2px 4px rgba(white, 1);
+$button-shadow--hover: $button-shadow;
+$button-shadow--press: inset -1px -1px 2px rgba(black, 1), inset 1px 1px 2px rgba(white, 1);
+
